@@ -16,6 +16,18 @@ gem 'puma', '~> 3.11'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+# Use webpacker to help with React components
+gem 'webpacker', '~> 4.0', '>= 4.0.7'
+
+# Use dotenv to manage keys
+gem 'dotenv-rails', '~> 2.7', '>= 2.7.2'
+
+# Use Faraday for API calls
+gem 'faraday', '~> 0.15.4'
+
+# Use fast_jsonapi serializers 
+gem 'fast_jsonapi', '~> 1.5'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
@@ -28,6 +40,11 @@ gem 'bootsnap', '>= 1.4.2', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rspec-rails', '~> 3.8', '>= 3.8.2'
+  gem 'capybara', '~> 3.25'
+  gem 'pry', '~> 0.12.2'
+  gem 'thin', '~> 1.7', '>= 1.7.2'
+  gem 'database_cleaner', '~> 1.7'
 end
 
 group :development do
