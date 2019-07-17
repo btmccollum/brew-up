@@ -11,7 +11,7 @@ RSpec.describe Beer, type: :model do
   it 'should identify the brewery it belongs to' do
     brewery = Brewery.create(name: "DAWN Brewing")
     ninja = brewery.beers.create(name: "Ninja IPA")
-    binding.pry
+
     expect(ninja).to be_valid
     expect(ninja.id).to eq(1)
     expect(ninja.brewery_id).to eq(brewery.id)

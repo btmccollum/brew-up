@@ -5,3 +5,15 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+breweries = ['Deep Ellum Brewing', 
+             'DAWN Brewing', 
+             'Rahr Brewing', 
+             'Turning Point',
+             'Bearded Eel',
+             'Shannon Brewing',
+             'Collective Brewing Project',
+             'Manhattan Project Brewing', 
+             'Locust Cider',
+             'Martin Hourse Brewing Company']
+
+breweries.each { |brewery_name| Brewery.create(name: brewery_name) }
