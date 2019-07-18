@@ -1,19 +1,18 @@
 module Types
   class QueryType < Types::BaseObject
-    # Add root-level fields here.
-    # They will be entry points for queries on your schema.
-
-    field :allBreweries do
-      type types[Types::BreweryType]
-      description "A list of all of the breweries"
-
-      resolve -> (obj, args, ctx) { Brewery.all }
-
-    field :brewery do
-      type Types::BreweryType
-      description "Return a brewery"
-      argument :id, !types.ID
-      resolve -> (obj, args, ctx) { Brewery.find(args[:id]) }
+    field :all_breweries, [BreweryType], null: true, description: "Returns a list of all Breweries"
+	
+    field :brewery, BreweryType, null: true do
+      description "Returns brewery given an ID"
+      argument :id, ID, required: true
     end
+
+    def all_breweries
+      Brewery.all
+    end
+
+    def book(id:)
+      Brewery.find_by(id: id)
+    end	
   end
 end

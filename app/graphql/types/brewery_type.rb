@@ -1,8 +1,8 @@
 module Types
   class BreweryType < Types::BaseObject
-    graphql_name "BreweryType"
+    graphql_name 'BreweryType'
 
-    field :id, !types.ID
-    field :name, !types.String
+    field :id, ID, null: false
+    field :name, String, null:false
   end
 end
