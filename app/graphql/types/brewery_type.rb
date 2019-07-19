@@ -4,14 +4,14 @@ module Types
 
     field :id, ID, null: true
     field :name, String, null: false
-    field :latitude, Float, null: true
-    field :longitude, Float, null: true
-    field :beer_count, Integer, null: true
-    field :address, String, null: true
-    field :city, String, null: true
-    field :state, String, null: true
-    field :country, String, null: true
-    field :rating, Float, null: true
-    field :review_count, Float, null: true
+    field :latitude, Float, null: false
+    field :longitude, Float, null: false
+    field :beer_count, Integer, null: false
+    field :address, String, null: false
+    field :city, String, null: false
+    field :state, String, null: false
+    field :country, String, null: false
+    field :rating, Float, null: false
+    field :review_count, Float, null: false
   end
 end
