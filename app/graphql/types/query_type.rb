@@ -11,7 +11,7 @@ module Types
       Brewery.all
     end
 
-    def book(id:)
+    def brewery(id:)
       Brewery.find_by(id: id)
     end	
   end
