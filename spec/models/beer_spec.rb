@@ -16,4 +16,16 @@ RSpec.describe Beer, type: :model do
     expect(ninja.id).to eq(1)
     expect(ninja.brewery_id).to eq(brewery.id)
   end
+
+  it 'should require a name to be instantiated' do 
+    brewery = Brewery.create(name: "DAWN Brewing")
+    ninja = brewery.beers.create
+
+    expect(ninja).not_to be_valid
+    
+    ninja = brewery.beers.create(name: "Odin")
+
+    expect(ninja).to be_valid
+    expect(ninja.name).to eq("Odin")
+  end
 end
