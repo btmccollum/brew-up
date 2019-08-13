@@ -17,8 +17,6 @@ gem 'puma', '~> 3.11'
 # gem 'bcrypt', '~> 3.1.7'
 
 # backend:
-# Use webpacker to help with React components
-gem 'webpacker', '~> 4.0', '>= 4.0.7'
 gem 'graphql', '~> 1.9', '>= 1.9.7'
 # Use dotenv to manage keys
 gem 'dotenv-rails', '~> 2.7', '>= 2.7.2'
