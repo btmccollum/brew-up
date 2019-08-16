@@ -1,0 +1,14 @@
+.search-bar-container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.search-bar {
+
+}
+
+/* #search-helper-text {
+  border: 1px solid black;
+  border-radius: 5%;
+} */
+

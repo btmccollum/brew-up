@@ -1,5 +1,6 @@
 import React from 'react'
 import { FormControl, FormHelperText, InputLabel, Input, Button } from '@material-ui/core'
+import '../search-bar.css'
 
 export default function SearchBar() {
   const [query, setQuery] = React.useState('');
@@ -14,7 +15,7 @@ export default function SearchBar() {
 
   return(
     <div className="search-bar-container">
-      <form>
+      <form className="search-bar">
         <FormControl>
           <InputLabel htmlFor="query">Enter a state...</InputLabel>
           <Input name="query-field" value={query} onChange={handleChange} aria-describedby="my-helper-text" />
