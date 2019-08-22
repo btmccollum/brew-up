@@ -6,7 +6,7 @@ module Mutations
       field :brewery, Types::BreweryType, null: true
       field :result, Boolean, null: true
 
-      argument :id, ID, required: true
+      # argument :id, ID, required: false
       argument :name, String, required: false
       argument :latitude, Float, required: false
       argument :longitude, Float, required: false
