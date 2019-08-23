@@ -10,7 +10,7 @@ module Mutations
       argument :name, String, required: false
       argument :latitude, Float, required: false
       argument :longitude, Float, required: false
-      argument :beer_count, Integer, required: false
+      argument :beer_count, Int, required: false
       argument :address, String, required: false
       argument :city, String, required: false
       argument :state, String, required: false
